@@ -1,0 +1,14 @@
+{
+  "name": "lista6_arrayestring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercicio10.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
