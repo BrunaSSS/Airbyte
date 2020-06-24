@@ -1,4 +1,3 @@
-var rs = require('readline-sync');
 var fs = require('fs');
 var json = fs.readFileSync('./cars.json');
 var cars = JSON.parse(json);
