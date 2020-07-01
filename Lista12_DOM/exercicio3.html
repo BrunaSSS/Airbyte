@@ -1,0 +1,24 @@
+</Abra uma caixa de texto pedindo para o usuário inserir a sua idade e, caso essa idade seja menor que 18 anos,
+ esse usuário seja redirecionado para a página do Mundo Bita (www.mundobita.com.br). Caso sua idade seja maior que 18 anos, 
+ redirecioná-lo para www.pudim.com.br/>
+
+
+
+
+<body>
+  <input id="caixaDeTextoIdade" type="text">
+  <button onclick="verificaIdade()">Analisar idade</button>
+  <script>
+
+    function verificaIdade() {
+      var caixaDeTextoIdade = document.getElementById('caixaDeTextoIdade');
+      var texto = caixaDeTextoIdade.value;
+      if(texto >= 18){
+        window.open("http://www.pudim.com.br")
+      }else{
+        window.open("https://www.mundobita.com.br/")
+      }
+    }
+
+  </script>
+</body>

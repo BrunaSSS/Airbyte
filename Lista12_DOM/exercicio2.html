@@ -1,0 +1,41 @@
+</Escreva um programa que recebe como entrada uma frase (Ex.: “O rato roeu a roupa do rei de roma”) 
+numa caixa de texto e exibe o resultado numa lista HTML, com as palavras separadas item a item. Exemplo:
+O
+Rato
+Roeu
+A
+Roupa
+Do
+Rei
+De
+Roma/>
+
+<body>
+  <input id="caixaDeTexto" type="text">
+  <button onclick="divideFrase()">Divide frase</button>
+  <script>
+
+    function divideFrase() {
+      console.log('Divide');
+      var caixaDeTexto = document.getElementById('caixaDeTexto');
+      var texto = caixaDeTexto.value;
+      imprimeLista(texto);
+    }
+
+    function imprimeLista(texto) {
+      console.log('Imprime lista com', texto);
+      var lista = document.createElement('ul');
+      var palavras = texto.split(' ');
+
+
+      for (let i = 0; i < palavras.length; i++) {
+        var palavra = palavras[i];
+
+        var item = document.createElement('li');
+        item.innerText = palavra;
+        lista.append(item);
+      }
+      document.body.append(lista);
+    }
+  </script>
+</body>
